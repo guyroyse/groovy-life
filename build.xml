@@ -1,0 +1,8 @@
+<project name="A Groovy Life" default="cucumber" basedir=".">
+
+	<target name="cucumber" description="Run Cucumber">
+		<exec executable="jruby" description="Run JRuby Cuke4Duke Tasks">
+			<arg line="-S cuke4duke --jars lib --format pretty" />
+		</exec>
+	</target>
+</project>
