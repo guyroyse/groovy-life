@@ -19,4 +19,6 @@ When(~/^I set the dimensions to (\d+) by (\d+)$/) { int height, int width ->
 }
 
 Then(~/^there should be a board of size (\d+) by (\d+)$/) { int height, int width ->
+	assert height == board.height
+	assert width == board.width
 }
