@@ -8,10 +8,12 @@ Then(~/^I get (\d+)$/) { int arg1 ->
   assert arg1 == sum
 }
 
-Given(~/^that I want to play the game of life$/) {
+Given(~/^that I have launched the game of life$/) {
+	board = new Board()
 }
 
-When(~/^I start playing$/) {
+When(~/^I set the dimensions to (\d+) by (\d+)$/) { int height, int width ->
+//	board.init(height, width)
 }
 
 Then(~/^there should be a board of size (\d+) by (\d+)$/) { int height, int width ->
