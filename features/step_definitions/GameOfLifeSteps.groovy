@@ -1,3 +1,5 @@
+import com.nationwide.codeclub.primus.groovylife.Board
+
 this.metaClass.mixin(cuke4duke.GroovyDsl)
 
 When(~/^I add (\d+) plus (\d+)$/) { int num1, int num2 ->
